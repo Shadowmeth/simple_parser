@@ -89,6 +89,9 @@ void group()
 void variable_identifier()
 {
 	non_zero_digit();
+	if (id[i] == '\0') {
+		cout << "SYNTAX ERROR: expected a letter (A, B, C, x, y, z), found NULL character" << endl;
+	}
 	group();
 }
 
